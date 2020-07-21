@@ -1,9 +1,9 @@
 <?php
 
-    $servername = "192.168.50.100";
-    $database = "BD_AGAPES_TDSI";
-    $username = "Mcastro";
-    $password = "XmK(qg0T";
+    $servername = "bfpefjoyqfutj3kawr98-mysql.services.clever-cloud.com:3306";
+    $database = "bfpefjoyqfutj3kawr98";
+    $username = "u9oqkqjvsiok9pxt";
+    $password = "nJ5nsu5Xt5uhDqx21wHE";
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $database);
     // Check connection
