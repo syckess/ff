@@ -7,10 +7,14 @@
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $database);
     // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+    $sql = "INSERT INTO acumulador (acum) VALUES ('1')";
+    if (mysqli_query($conn, $sql)) {
+      echo "New record created successfully";
+   } 
+    else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    echo "Connected successfully";
     mysqli_close($conn);
+
 
 ?>
